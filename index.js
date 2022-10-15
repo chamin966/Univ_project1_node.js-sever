@@ -42,6 +42,21 @@ app.delete("/dataDel", async (req, res) => {
   res.status(200).send(); // status(200), 성공 상태를 전송
 });
 
+app.get("/dataGet", async (req, res) => {
+  // 데이터의 추가
+  const { name, status } = req.body;
+  console.log(req.body, name, status);
+  const res2 = await db
+    .collection("people")
+    .doc("Person1") // 나중에 이 부분을 user의 UID로 바꿀 것
+    .get();
+  let a = res2.data();
+  console.log(a);
+  console.log(a.p1);
+  console.log(a.happy);
+  res.status(200).send(); // status(200), 성공 상태를 전송
+});
+
 app.listen(portNum, () => {
   console.log("서버가 실행중입니다...");
 });

@@ -1,11 +1,19 @@
-### GET
+### POST
 POST http://localhost:3000/dataAdd
 Content-Type: application/json
 
 {
-    "name" : "1",
-    "status": "12343"
+    "name" : "p1",
+    "status": "happy"
 }
 
 ### DELETE
 DELETE http://localhost:3000/dataDel
+
+### GET
+GET http://localhost:3000/dataGet
+
+{
+    "name" : "p1",
+    "status": "happy"
+}
