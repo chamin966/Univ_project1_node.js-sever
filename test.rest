@@ -1,0 +1,11 @@
+### GET
+POST http://localhost:3000/dataAdd
+Content-Type: application/json
+
+{
+    "name" : "1",
+    "status": "12343"
+}
+
+### DELETE
+DELETE http://localhost:3000/dataDel
