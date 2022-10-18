@@ -1,17 +1,11 @@
 const express = require("express");
 const app = express();
-const portNum = 3000;
+const portNum = 3002;
 const { db } = require("./firebase.js"); // firebase.js 임포트
 
 app.use(express.json());
-
-const friends = {
-  // 예시 자료
-  james: "friend",
-  larry: "friend",
-  lucy: "friend",
-  banana: "enemy",
-};
+var cors = require("cors");
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Hello world!!");
@@ -51,9 +45,6 @@ app.get("/dataGet", async (req, res) => {
     .doc("Person1") // 나중에 이 부분을 user의 UID로 바꿀 것
     .get();
   let a = res2.data();
-  console.log(a);
-  console.log(a.p1);
-  console.log(a.happy);
   res.status(200).send(); // status(200), 성공 상태를 전송
 });
 
