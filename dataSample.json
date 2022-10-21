@@ -1,0 +1,15 @@
+{
+    "name" : "xxxx",
+    "email": "xxxx@ccc.com",
+    "Phone#": "xxx-xxxx-xxxx",
+    "sex": "M/F",
+    "address": "ABC.XXX, DDD",
+    "Legal_Representative_name": "xxx",
+    "Legal_Representative_Phone#": "xxx-xxxx-xxxx",
+    "Legal_Representative_Relation": "xxxxx",
+    "BioBank_Institute_Name":   "National BioBank of Korea",
+    "BioBank_Institute_Phone#": "043-719-6520"
+}
+//  [밑에 2개는 고정]
+//      "BioBank_Institute_Name":   "National BioBank of Korea",
+//      "BioBank_Institute_Phone#": "043-719-6520"
