@@ -1,0 +1,7 @@
+{
+    "User_ID": "--------------------",
+    "SignedDateTime": "CurrentDate",
+    "Issuer": "Admin",
+    "PaperNumber":  "AXB10023(temp)",
+    "InputHash": "hashed result from dataSample.json"
+}
